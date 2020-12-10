@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CursosModule } from './cursos/cursos.module';
+import { CoursesModule } from './courses/courses.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,7 +14,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    CursosModule
+    CoursesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

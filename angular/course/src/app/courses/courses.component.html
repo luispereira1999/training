@@ -1,0 +1,9 @@
+<div>
+  <p>Lista de Cursos de: {{ siteName }}</p>
+
+  <ul>
+    <li *ngFor="let course of courses">{{ course }}</li>
+  </ul>
+
+  <app-course-detail></app-course-detail>
+</div>
