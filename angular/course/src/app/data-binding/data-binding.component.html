@@ -12,4 +12,27 @@
     <p>Exemplo 1: <img [src]="imageUrl" height="50" width="50"></p>
     <p>Exemplo 2: <img bind-src="imageUrl" height="50" width="50"></p>
   </section>
+
+  <section>
+    <h1>Style Binding</h1>
+
+    <select #cor (change)="0">
+      <option value="color-1">Vermelho</option>
+      <option value="color-2">Verde</option>
+      <option value="color-3">Azul</option>
+    </select>
+
+    <br /> <br />
+
+    <p>Exemplo 1:</p>
+    <button nz-button nzType="primary" [class.color-1]="cor.value == 'color-1'">Cor 1</button>
+    <button nz-button nzType="primary" [class.color-2]="cor.value == 'color-2'">Cor 2</button>
+    <button nz-button nzType="primary" [class.color-3]="cor.value == 'color-3'">Cor 3</button>
+
+    <p>Exemplo 2:</p>
+    <button nz-button nzType="primary" class="{{ cor.value }}">Cor 1</button>
+
+    <p>Exemplo 3:</p>
+    <button nz-button nzType="primary" [class]="cor.value">Cor 1</button>
+  </section>
 </div>

@@ -5,7 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.less']
 })
-export class DataBindingComponent implements OnInit {
+
+export class DataBindingComponent {
   url: string = "https://angular.io/";
   imageUrl: string = "https://images.unsplash.com/photo-1607579771747-1aa92c36515c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80";
   title: string = "Hello World"
@@ -15,8 +16,5 @@ export class DataBindingComponent implements OnInit {
   }
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
