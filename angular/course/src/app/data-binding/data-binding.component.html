@@ -1,5 +1,5 @@
 <div>
-  <section>
+  <!-- <section>
     <h1>INTERPOLAÇÃO</h1>
     <p>Exemplo 1: {{ url }}</p>
     <p>Exemplo 2: {{ 2 * 5 }}</p>
@@ -45,6 +45,26 @@
     <h1>STYLE BINDING</h1>
     <p>Exemplo:</p>
     <button nz-button nzType="primary" class="color-1" [style.display]="cor.value == 'color-1' ? 'block' : 'none'">Cor 1</button>
+  </section>
+  <br /> -->
+
+
+  <section>
+    <h1>EVENT BINDING</h1>
+    <p>Exemplo 1:</p>
+    <button nz-button nzType="primary" (click)="buttonClicked()">Clique</button>
+    <br /> <br />
+
+    <p>Exemplo 2:</p>
+    <input nz-input placeholder="Basic" (keyup)="onKeyUp($event)" (keyup.enter)="saveText($event.target.value)" />
+    <p>Texto digitado: {{ writtenText }}</p>
+    <p>Texto guardado: {{ savedText }}</p>
+
+    <p>Exemplo 3:</p>
+    <input nz-input placeholder="Basic" (keyup)="onKeyUp($event)" (keyup.enter)="saveText(inputText.value)" #inputText />
+    <p>Texto digitado: {{ writtenText }}</p>
+    <p>Texto guardado: {{ savedText }}</p>
+    <br />
   </section>
   <br />
 </div>
