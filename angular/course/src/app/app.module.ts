@@ -1,3 +1,4 @@
+import { PersonModule } from './person/person.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CoursesModule } from './courses/courses.module';
@@ -9,21 +10,23 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InputPropertyComponent } from './input-property/input-property.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    InputPropertyComponent
   ],
   imports: [
     BrowserModule,
     CoursesModule,
-
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PersonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

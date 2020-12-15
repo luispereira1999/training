@@ -1,0 +1,23 @@
+<section>
+  <h1>TWO-WAY DATA BINDING</h1>
+  <p>Exemplo 1:</p>
+  <input nz-input placeholder="Digite o nome" [value]="name" (input)="name = $event.target.value" />
+  <p>Nome: {{ name }}</p>
+  <br /> <br />
+
+  <p>Exemplo 2:</p>
+  <input nz-input placeholder="Digite o nome" [ngModel]="name" (ngModelChange)="name = $event" />
+  <p>Nome: {{ name }}</p>
+  <br /> <br />
+
+  <p>Exemplo 3:</p>
+  <input nz-input placeholder="Digite o nome" [(ngModel)]="name" />
+  <p>Nome: {{ name }}</p>
+  <br /> <br />
+
+  <p>Exemplo 4:</p>
+  <input nz-input placeholder="Digite o nome" [(ngModel)]="person.name" />
+  <input nz-input placeholder="Digite o nome" [(ngModel)]="person.age" />
+  <p>Meu nome é {{ person.name }} e tenho {{ person.age }}</p>
+  <br /> <br />
+</section>
