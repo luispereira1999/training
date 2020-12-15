@@ -76,5 +76,6 @@
     <h1>INPUT/OUTPUT PROPERTIES</h1>
 
     <app-input-property [nameCourse]="dataCourse"></app-input-property>
+    <app-output-property [num]="initialValue" (changeValue)="onChangeValue($event)"></app-output-property>
   </section>
 </div>

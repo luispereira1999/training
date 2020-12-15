@@ -14,6 +14,7 @@ export class DataBindingComponent {
   writtenText: string = "";
   savedText: string = "";
   dataCourse: string = "Angular";
+  initialValue: number = 1;
 
   getValue() {
     return 15;
@@ -29,6 +30,10 @@ export class DataBindingComponent {
 
   saveText(text: string) {
     this.savedText = text;
+  }
+
+  onChangeValue(event) {
+    console.log(event);
   }
 
   constructor() { }
