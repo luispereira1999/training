@@ -11,4 +11,5 @@ import { FormsModule } from '@angular/forms';
   ],
   exports: [PersonComponent]
 })
+
 export class PersonModule { }

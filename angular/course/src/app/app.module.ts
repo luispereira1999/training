@@ -31,4 +31,5 @@ import { InputPropertyComponent } from './input-property/input-property.componen
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

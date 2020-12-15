@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-data-binding',
@@ -13,6 +13,7 @@ export class DataBindingComponent {
   title: string = "Hello World"
   writtenText: string = "";
   savedText: string = "";
+  dataCourse: string = "Angular";
 
   getValue() {
     return 15;
